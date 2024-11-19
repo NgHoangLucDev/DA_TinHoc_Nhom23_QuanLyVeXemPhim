@@ -1,0 +1,10 @@
+Họ tên: Tuấn Anh
+SĐT: 0918997603
+Ngày đặt vé: 23/10/2024
+Tên phim: Phim ABC
+Số thứ tự rạp: Rạp 3
+Số lượng ghế: 2
+Số thứ tự ghế: A1, A2
+Tổng tiền: 100000
+Tình trạng: Đã thanh toán
+--------------------------

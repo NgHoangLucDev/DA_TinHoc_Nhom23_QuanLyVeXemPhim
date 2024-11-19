@@ -1,0 +1,13 @@
+D:\DoAnTinHoc\DoAnTinHoc\bin\Debug\DoAnTinHoc.exe.config
+D:\DoAnTinHoc\DoAnTinHoc\bin\Debug\DoAnTinHoc.exe
+D:\DoAnTinHoc\DoAnTinHoc\bin\Debug\DoAnTinHoc.pdb
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.csproj.AssemblyReference.cache
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.frmLogin.resources
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.frmHome.resources
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.Properties.Resources.resources
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.csproj.GenerateResource.cache
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.csproj.CoreCompileInputs.cache
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.exe
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.pdb
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.frmDanhsachphim.resources
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.frmDatghe.resources
