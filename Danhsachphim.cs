@@ -85,9 +85,9 @@ namespace DoAnTinHoc
 
             InitializeComponent();
             cmbTheLoaiPhim.Items.AddRange(danhSachPhim.Keys.ToArray());
-            //lstDanhSachPhim.SelectedIndexChanged += lstDanhSachPhim_SelectedIndexChanged;
+    
             lstDanhSachPhim.Items.AddRange(duongDanAnhPhim.Keys.ToArray());
-            //lstDanhSachPhim.SelectedIndexChanged += lstDanhSachPhim_SelectedIndexChanged;
+            
             cmbTheLoaiPhim.SelectedIndexChanged += cmbTheLoaiPhim_SelectedIndexChanged;
 
 

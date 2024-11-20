@@ -8,23 +8,21 @@ namespace DoAnTinHoc
 {
     internal static class Program
     {
+
         /// <summary>
-        /// The main entry point for the application.
+        /// Điểm bắt đầu của ứng dụng.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-          
-            using (frmLogin loginForm = new frmLogin())
+
+            // Hiển thị frmLogin đầu tiên
+            frmLogin login = new frmLogin();
+            if (login.ShowDialog() == DialogResult.OK) // Nếu frmLogin trả về OK
             {
-               
-                if (loginForm.ShowDialog() == DialogResult.OK)
-                {
-                    
-                    Application.Run(new frmHome());
-                }
+                Application.Run(new frmHome()); // Chạy frmHome
             }
         }
     }

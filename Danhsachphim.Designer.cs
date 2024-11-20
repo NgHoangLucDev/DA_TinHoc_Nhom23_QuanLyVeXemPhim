@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtpNgayChieu = new System.Windows.Forms.DateTimePicker();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlTheLoai = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -58,15 +57,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(903, 45);
             this.panel1.TabIndex = 0;
-            // 
-            // dtpNgayChieu
-            // 
-            this.dtpNgayChieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayChieu.Location = new System.Drawing.Point(32, 121);
-            this.dtpNgayChieu.Name = "dtpNgayChieu";
-            this.dtpNgayChieu.Size = new System.Drawing.Size(91, 22);
-            this.dtpNgayChieu.TabIndex = 1;
-            this.dtpNgayChieu.Value = new System.DateTime(2024, 10, 30, 0, 0, 0, 0);
             // 
             // lblTitle
             // 
@@ -121,7 +111,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dtpNgayChieu);
             this.panel2.Controls.Add(this.btnDatghe);
             this.panel2.Controls.Add(this.lstDanhSachPhim);
             this.panel2.Location = new System.Drawing.Point(241, 45);
@@ -223,7 +212,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblThongTinFilm;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpNgayChieu;
         private System.Windows.Forms.TextBox txtSearch;
     }
 }

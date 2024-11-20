@@ -31,9 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTieude = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnDatve = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnThemThongTinKH = new System.Windows.Forms.Button();
             this.btnTimVe = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -44,6 +43,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblKetQuaTimKiem = new System.Windows.Forms.Label();
             this.pnlD = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTongTien = new System.Windows.Forms.Label();
             this.lblNgaydatve = new System.Windows.Forms.Label();
             this.lblTinhTrang = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,13 +60,7 @@
             this.lblTenPhim = new System.Windows.Forms.Label();
             this.lblSDT2 = new System.Windows.Forms.Label();
             this.lblHoten2 = new System.Windows.Forms.Label();
-            this.lblTongTien = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,9 +88,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.btnDatve);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.btnThemThongTinKH);
             this.panel2.Controls.Add(this.btnTimVe);
             this.panel2.Controls.Add(this.txtSDT);
@@ -103,9 +102,19 @@
             this.panel2.Size = new System.Drawing.Size(361, 353);
             this.panel2.TabIndex = 1;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(91, 285);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(178, 45);
+            this.btnLogout.TabIndex = 8;
+            this.btnLogout.Text = "Đăng Xuất";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // btnDatve
             // 
-            this.btnDatve.Location = new System.Drawing.Point(91, 299);
+            this.btnDatve.Location = new System.Drawing.Point(91, 229);
             this.btnDatve.Name = "btnDatve";
             this.btnDatve.Size = new System.Drawing.Size(178, 45);
             this.btnDatve.TabIndex = 7;
@@ -113,26 +122,9 @@
             this.btnDatve.UseVisualStyleBackColor = true;
             this.btnDatve.Click += new System.EventHandler(this.btnDatve_Click);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(98, 131);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(172, 22);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Ngày đặt vé";
-            // 
             // btnThemThongTinKH
             // 
-            this.btnThemThongTinKH.Location = new System.Drawing.Point(91, 242);
+            this.btnThemThongTinKH.Location = new System.Drawing.Point(91, 172);
             this.btnThemThongTinKH.Name = "btnThemThongTinKH";
             this.btnThemThongTinKH.Size = new System.Drawing.Size(178, 45);
             this.btnThemThongTinKH.TabIndex = 6;
@@ -142,7 +134,7 @@
             // 
             // btnTimVe
             // 
-            this.btnTimVe.Location = new System.Drawing.Point(93, 186);
+            this.btnTimVe.Location = new System.Drawing.Point(93, 116);
             this.btnTimVe.Name = "btnTimVe";
             this.btnTimVe.Size = new System.Drawing.Size(178, 45);
             this.btnTimVe.TabIndex = 5;
@@ -233,6 +225,70 @@
             this.pnlD.Size = new System.Drawing.Size(408, 304);
             this.pnlD.TabIndex = 3;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(18, 153);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 16);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Số Ghế";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(18, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 16);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Thứ Tự Rạp";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 96);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 16);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Tên Phim:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(18, 67);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 16);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Ngày Đặt Vé";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 16);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Số Điện Thoại";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 16);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Tên Khách Hàng";
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.AutoSize = true;
+            this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongTien.Location = new System.Drawing.Point(82, 223);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(87, 16);
+            this.lblTongTien.TabIndex = 22;
+            this.lblTongTien.Text = "....................";
+            // 
             // lblNgaydatve
             // 
             this.lblNgaydatve.AutoSize = true;
@@ -279,6 +335,7 @@
             this.btnInVe.TabIndex = 1;
             this.btnInVe.Text = "In Vé";
             this.btnInVe.UseVisualStyleBackColor = true;
+            this.btnInVe.Click += new System.EventHandler(this.btnInVe_Click);
             // 
             // lblThutughe
             // 
@@ -330,70 +387,6 @@
             this.lblHoten2.TabIndex = 5;
             this.lblHoten2.Text = "....................";
             // 
-            // lblTongTien
-            // 
-            this.lblTongTien.AutoSize = true;
-            this.lblTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongTien.Location = new System.Drawing.Point(82, 223);
-            this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(87, 16);
-            this.lblTongTien.TabIndex = 22;
-            this.lblTongTien.Text = "....................";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 16);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Tên Khách Hàng";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 16);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Số Điện Thoại";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 16);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Ngày Đặt Vé";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 96);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 16);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Tên Phim:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 16);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Thứ Tự Rạp";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 153);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 16);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Số Ghế";
-            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,6 +398,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmHome";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.frmHome_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -437,8 +431,6 @@
         private System.Windows.Forms.Label lblTenPhim;
         private System.Windows.Forms.Label lblSDT2;
         private System.Windows.Forms.Label lblHoten2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnInVe;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTinhTrang;
@@ -452,5 +444,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

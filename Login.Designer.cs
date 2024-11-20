@@ -36,10 +36,11 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpNow = new System.Windows.Forms.DateTimePicker();
-            this.txtTenNhanVien = new System.Windows.Forms.TextBox();
+            this.txtMaNhanVien = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtPassNhanVien = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblA
@@ -69,7 +70,6 @@
             this.txtUsername.Size = new System.Drawing.Size(204, 22);
             this.txtUsername.TabIndex = 3;
             this.txtUsername.Text = "Username";
-            this.txtUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsername_KeyDown);
             // 
             // txtPassword
             // 
@@ -78,15 +78,14 @@
             this.txtPassword.Size = new System.Drawing.Size(204, 22);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.Text = "Password";
-            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.IndianRed;
-            this.btnCancel.Location = new System.Drawing.Point(44, 325);
+            this.btnCancel.Location = new System.Drawing.Point(44, 340);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(87, 47);
-            this.btnCancel.TabIndex = 6;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -94,10 +93,10 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLogin.Location = new System.Drawing.Point(161, 325);
+            this.btnLogin.Location = new System.Drawing.Point(161, 340);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(87, 47);
-            this.btnLogin.TabIndex = 7;
+            this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -105,22 +104,13 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(44, 396);
+            this.linkLabel1.Location = new System.Drawing.Point(44, 411);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(98, 16);
-            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Liên Hệ Hỗ Trợ";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::DoAnTinHoc.Properties.Resources.pngtree_coorful_user_icon_on_gray_background_png_image_1690151;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(111, 34);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(75, 75);
-            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -139,21 +129,38 @@
             this.dtpNow.Size = new System.Drawing.Size(94, 22);
             this.dtpNow.TabIndex = 10;
             // 
-            // txtTenNhanVien
+            // txtMaNhanVien
             // 
-            this.txtTenNhanVien.Location = new System.Drawing.Point(47, 273);
-            this.txtTenNhanVien.Name = "txtTenNhanVien";
-            this.txtTenNhanVien.Size = new System.Drawing.Size(204, 22);
-            this.txtTenNhanVien.TabIndex = 5;
-            this.txtTenNhanVien.Text = "Tên Nhân Viên";
-            this.txtTenNhanVien.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTenNhanVien_KeyDown);
+            this.txtMaNhanVien.Location = new System.Drawing.Point(47, 273);
+            this.txtMaNhanVien.Name = "txtMaNhanVien";
+            this.txtMaNhanVien.Size = new System.Drawing.Size(204, 22);
+            this.txtMaNhanVien.TabIndex = 5;
+            this.txtMaNhanVien.Text = "Mã Nhân Viên";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::DoAnTinHoc.Properties.Resources.pngtree_coorful_user_icon_on_gray_background_png_image_1690151;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(111, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(75, 75);
+            this.panel1.TabIndex = 0;
+            // 
+            // txtPassNhanVien
+            // 
+            this.txtPassNhanVien.Location = new System.Drawing.Point(47, 301);
+            this.txtPassNhanVien.Name = "txtPassNhanVien";
+            this.txtPassNhanVien.Size = new System.Drawing.Size(204, 22);
+            this.txtPassNhanVien.TabIndex = 6;
+            this.txtPassNhanVien.Text = "PassWord Nhân Viên";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 450);
-            this.Controls.Add(this.txtTenNhanVien);
+            this.Controls.Add(this.txtPassNhanVien);
+            this.Controls.Add(this.txtMaNhanVien);
             this.Controls.Add(this.dtpNow);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
@@ -184,7 +191,8 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpNow;
-        private System.Windows.Forms.TextBox txtTenNhanVien;
+        private System.Windows.Forms.TextBox txtMaNhanVien;
+        private System.Windows.Forms.TextBox txtPassNhanVien;
     }
 }
 

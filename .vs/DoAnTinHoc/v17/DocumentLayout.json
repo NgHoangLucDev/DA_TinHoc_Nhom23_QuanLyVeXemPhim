@@ -3,40 +3,52 @@
   "WorkspaceRootPath": "D:\\DoAnTinHoc\\DoAnTinHoc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|d:\\doantinhoc\\doantinhoc\\thongtinve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:thongtinve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|d:\\doantinhoc\\doantinhoc\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\danhsachphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:danhsachphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\danhsachphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:danhsachphim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\datghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:datghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|D:\\DoAnTinHoc\\DoAnTinHoc\\datghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C0A51E-EF29-4E51-8F7D-7F377315BE06}|DoAnTinHoc.csproj|solutionrelative:datghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,116 +58,157 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Home.cs",
+              "RelativeDocumentMoniker": "Home.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Home.cs",
+              "RelativeToolTip": "Home.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAArwI0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T14:50:01.901Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThongTinVe.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\ThongTinVe.cs",
+              "RelativeDocumentMoniker": "ThongTinVe.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\ThongTinVe.cs",
+              "RelativeToolTip": "ThongTinVe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:48:24.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAIAxwGQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:28:11.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:28:06.119Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\KhachHang.cs",
+              "RelativeDocumentMoniker": "KhachHang.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\KhachHang.cs",
+              "RelativeToolTip": "KhachHang.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T11:18:43.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\NhanVien.cs",
+              "RelativeDocumentMoniker": "NhanVien.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\NhanVien.cs",
+              "RelativeToolTip": "NhanVien.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T11:12:58.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:35:52.397Z"
+              "WhenOpened": "2024-11-07T12:35:52.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form3.cs [Design]*",
-              "RelativeToolTip": "Form3.cs [Design]*",
+              "DocumentIndex": 5,
+              "Title": "Danhsachphim.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Danhsachphim.cs",
+              "RelativeDocumentMoniker": "Danhsachphim.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Danhsachphim.cs [Design]",
+              "RelativeToolTip": "Danhsachphim.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T15:12:56.226Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form3.cs",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form3.cs*",
-              "RelativeToolTip": "Form3.cs*",
-              "ViewState": "AQIAACsAAAAAAAAAAIAwwDQAAAAEAAAA",
+              "DocumentIndex": 6,
+              "Title": "Danhsachphim.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Danhsachphim.cs",
+              "RelativeDocumentMoniker": "Danhsachphim.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Danhsachphim.cs",
+              "RelativeToolTip": "Danhsachphim.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAcwFcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T06:16:51.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAcwF0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T14:50:01.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Home.cs",
+              "RelativeDocumentMoniker": "Home.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Home.cs [Design]",
+              "RelativeToolTip": "Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T11:54:16.105Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T11:47:52.329Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAywCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T11:52:52.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form4.cs",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form4.cs",
-              "RelativeDocumentMoniker": "Form4.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form4.cs",
-              "RelativeToolTip": "Form4.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAIA3wBsAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "Datghe.cs",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Datghe.cs",
+              "RelativeDocumentMoniker": "Datghe.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Datghe.cs",
+              "RelativeToolTip": "Datghe.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAASwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T11:31:59.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form4.cs [Design]",
-              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form4.cs",
-              "RelativeDocumentMoniker": "Form4.cs",
-              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Form4.cs [Design]",
-              "RelativeToolTip": "Form4.cs [Design]",
+              "DocumentIndex": 9,
+              "Title": "Datghe.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnTinHoc\\DoAnTinHoc\\Datghe.cs",
+              "RelativeDocumentMoniker": "Datghe.cs",
+              "ToolTip": "D:\\DoAnTinHoc\\DoAnTinHoc\\Datghe.cs [Design]",
+              "RelativeToolTip": "Datghe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T11:22:20.552Z",
               "EditorCaption": " [Design]"
