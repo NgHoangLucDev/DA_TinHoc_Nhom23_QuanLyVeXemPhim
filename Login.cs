@@ -36,72 +36,85 @@ namespace DoAnTinHoc
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+          
+            string danhSachNhanVienFilePath = @"D:\DoAnTinHoc\DoAnTinHoc\DanhSachNhanVien.txt";
 
-            string defaultUsername = "1";
-            string defaultPassword = "1";
+          
+            string lichSuDangNhapFilePath = @"D:\DoAnTinHoc\DoAnTinHoc\LichSuDangNhap.txt";
 
-            string inputUsername = txtUsername.Text.Trim();
-            string inputPassword = txtPassword.Text.Trim();
             string inputMaNhanVien = txtMaNhanVien.Text.Trim();
             string inputPassNhanVien = txtPassNhanVien.Text.Trim();
 
-            string danhSachNhanVienFilePath = @"D:\DoAnTinHoc\DoAnTinHoc\DanhSachNhanVien.txt";
-            string lichSuDangNhapFilePath = @"D:\DoAnTinHoc\DoAnTinHoc\LichSuDangNhap.txt";
-
-           
-            if (inputUsername != defaultUsername || inputPassword != defaultPassword)
-            {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu sai!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-           
-            if (!File.Exists(danhSachNhanVienFilePath))
-            {
-                MessageBox.Show("File danh sách nhân viên không tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             
-            bool isValidEmployee = false;
-            string[] lines = File.ReadAllLines(danhSachNhanVienFilePath);
-
-            foreach (string line in lines)
+            if (string.IsNullOrEmpty(inputMaNhanVien) || string.IsNullOrEmpty(inputPassNhanVien))
             {
-                string[] parts = line.Split(',');
-                if (parts.Length == 2)
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+          
+            if (inputPassNhanVien.Length < 8)
+            {
+                MessageBox.Show("Mật khẩu có ít nhất 8 ký tự!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+           
+                if (File.Exists(danhSachNhanVienFilePath))
                 {
-                    string maNhanVien = parts[0].Trim();
-                    string passNhanVien = parts[1].Trim();
+                    string[] lines = File.ReadAllLines(danhSachNhanVienFilePath);
+                    bool isValidEmployee = false;
 
-                    if (maNhanVien == inputMaNhanVien && passNhanVien == inputPassNhanVien)
+                    foreach (string line in lines)
                     {
-                        isValidEmployee = true;
+                        
+                        string[] parts = line.Split('|');
+                        if (parts.Length == 2)
+                        {
+                            string maNhanVien = parts[0].Trim();
+                            string passNhanVien = parts[1].Trim();
 
-                       
-                        string currentTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                        string loginInfo = $"Mã Nhân Viên:  {maNhanVien} Đăng Nhập Vào Lúc: {currentTime}";
+                            if (maNhanVien == inputMaNhanVien && passNhanVien == inputPassNhanVien)
+                            {
+                                isValidEmployee = true;
 
-                        File.AppendAllText(lichSuDangNhapFilePath, loginInfo + Environment.NewLine);
-                        break;
+                               
+                                string currentTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                string loginInfo = $"{maNhanVien} Đăng Nhập Vào Lúc: {currentTime}";
+                                File.AppendAllText(lichSuDangNhapFilePath, loginInfo + Environment.NewLine);
+
+                                break;
+                            }
+                        }
+                    }
+
+                    if (isValidEmployee)
+                    {
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        frmHome home = new frmHome();
+                        this.Hide();
+                        home.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai thông tin tài khoản hoặc mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("File danh sách nhân viên không tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (isValidEmployee)
-            {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtPassNhanVien.PasswordChar = '*';
 
-                
-                frmHome home = new frmHome();
-                this.Hide();  
-                home.ShowDialog();
-                this.Close(); 
-            }
-            else
-            {
-                MessageBox.Show("Bạn không có QUYỀN TRUY CẬP!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
 
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -111,8 +124,5 @@ namespace DoAnTinHoc
                 UseShellExecute = true
             });
         }
-    
-
-      
     }
 }

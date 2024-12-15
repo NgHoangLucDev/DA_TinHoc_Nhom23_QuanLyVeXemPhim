@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblA = new System.Windows.Forms.Label();
             this.lblB = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -63,26 +61,10 @@
             this.lblB.TabIndex = 2;
             this.lblB.Text = "ADMIN SIGN IN";
             // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(47, 217);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(204, 22);
-            this.txtUsername.TabIndex = 3;
-            this.txtUsername.Text = "Username";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(47, 245);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(204, 22);
-            this.txtPassword.TabIndex = 4;
-            this.txtPassword.Text = "Password";
-            // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.IndianRed;
-            this.btnCancel.Location = new System.Drawing.Point(44, 340);
+            this.btnCancel.Location = new System.Drawing.Point(40, 276);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(87, 47);
             this.btnCancel.TabIndex = 7;
@@ -93,7 +75,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLogin.Location = new System.Drawing.Point(161, 340);
+            this.btnLogin.Location = new System.Drawing.Point(157, 276);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(87, 47);
             this.btnLogin.TabIndex = 8;
@@ -104,7 +86,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(44, 411);
+            this.linkLabel1.Location = new System.Drawing.Point(40, 347);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(98, 16);
             this.linkLabel1.TabIndex = 9;
@@ -131,11 +113,11 @@
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.Location = new System.Drawing.Point(47, 273);
+            this.txtMaNhanVien.Location = new System.Drawing.Point(43, 220);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(204, 22);
             this.txtMaNhanVien.TabIndex = 5;
-            this.txtMaNhanVien.Text = "Mã Nhân Viên";
+            this.txtMaNhanVien.Text = "Email ";
             // 
             // panel1
             // 
@@ -148,11 +130,11 @@
             // 
             // txtPassNhanVien
             // 
-            this.txtPassNhanVien.Location = new System.Drawing.Point(47, 301);
+            this.txtPassNhanVien.Location = new System.Drawing.Point(43, 248);
             this.txtPassNhanVien.Name = "txtPassNhanVien";
             this.txtPassNhanVien.Size = new System.Drawing.Size(204, 22);
             this.txtPassNhanVien.TabIndex = 6;
-            this.txtPassNhanVien.Text = "PassWord Nhân Viên";
+            this.txtPassNhanVien.Text = "PassWord";
             // 
             // frmLogin
             // 
@@ -166,8 +148,6 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblB);
             this.Controls.Add(this.lblA);
             this.Controls.Add(this.panel1);
@@ -184,8 +164,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblA;
         private System.Windows.Forms.Label lblB;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.LinkLabel linkLabel1;

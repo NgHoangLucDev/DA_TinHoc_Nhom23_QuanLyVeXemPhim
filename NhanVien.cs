@@ -26,12 +26,5 @@ namespace DoAnTinHoc
         }
 
      
-        public void HienThiThongTin()
-        {
-            //Console.WriteLine($"Tên NV: {TenNV}");
-            //Console.WriteLine($"SĐT NV: {SDTNV}");
-            //Console.WriteLine($"Username NV: {UsernameNV}");
-        }
-
     }
 }

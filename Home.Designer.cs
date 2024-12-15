@@ -79,10 +79,11 @@
             // lblTieude
             // 
             this.lblTieude.AutoSize = true;
-            this.lblTieude.Font = new System.Drawing.Font("SVN-Prima", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieude.BackColor = System.Drawing.Color.Transparent;
+            this.lblTieude.Font = new System.Drawing.Font("SVN-Servetica Medium", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieude.Location = new System.Drawing.Point(122, 14);
             this.lblTieude.Name = "lblTieude";
-            this.lblTieude.Size = new System.Drawing.Size(531, 51);
+            this.lblTieude.Size = new System.Drawing.Size(578, 49);
             this.lblTieude.TabIndex = 0;
             this.lblTieude.Text = "TRÌNH QUẢN LÝ VÉ XEM PHIM";
             // 

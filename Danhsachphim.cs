@@ -17,65 +17,35 @@ namespace DoAnTinHoc
 
     public partial class frmDanhsachphim : Form
     {
-        //-------------------------------------------------//
+        //====================================================================//
+        private List<ThongTinPhim> danhSachPhim = new List<ThongTinPhim>();
+        //====================================================================//
+
+        private string m_hoten;
+        private string m_sdt;
+        public frmDanhsachphim(string m_hoten, string m_sdt)
+        {
+            InitializeComponent();
+            txtSearch.TextChanged += txtSearch_TextChanged;
+
+
+        }
+
+
         private frmHome frmhomeInstance;
 
         public frmDanhsachphim(frmHome frmhome)
         {
             InitializeComponent();
-            // -----------------------------------------------------------------//
-            frmhomeInstance = frmhome;
-            cmbTheLoaiPhim = new ComboBox { Dock = DockStyle.Top };
-            cmbTheLoaiPhim.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cmbTheLoaiPhim.AutoCompleteSource = AutoCompleteSource.ListItems;
-            lstDanhSachPhim = new ListBox { Dock = DockStyle.Fill };
-            txtSearch.TextChanged += txtSearch_TextChanged ;
-            this.Controls.Add(lstDanhSachPhim);
-            this.Controls.Add(txtSearch);
-            this.Controls.Add(cmbTheLoaiPhim);
-
+        
+           
 
         }
-        //-----------------------------------------------//
-        Dictionary<string, List<string>> danhSachPhim = new Dictionary<string, List<string>>()
+     
+   
 
-{
-    { "Kinh dị", new List<string> { "Mười", "Insidious", "Ngôi Nhà Trong Hẻm", "Vong Nhi" } },
-    { "Tình yêu", new List<string> { "Thương Mến", "La La Land", "Trước Ngày Em Đến", "Titanic" } },
-    { "Hoạt hình", new List<string> { "The Lion King - Vua Sư Tử", "Zootopia - Phi Vụ Động Trời", "Big Hero 6 - Biệt Đội Big Hero 6", "Rumble - Quái Thú So Chiêu" } },
-    { "Hài", new List<string> { "Lật Mặt 6: Tấm Vé Định Mệnh", "Con Nhót Mót Chồng ", "Siêu Lừa Gặp Siêu Lầy", "Biệt Đội Rất Ổn" } },
-    { "Hành động", new List<string> { "Godzilla x Kong: Đế chế mới", "The Beekeeper - Mật vụ ong", "The Roundup Punishment - Vây hãm: Kẻ trừng phạt", "Hành Tinh Khỉ: Vương Quốc Mới" } },
-    { "Khoa học viễn tưởng", new List<string> { "The Hunger Games", "Guardians of the Galaxy Vol. 3", "Transformers: Rise of the Beasts", "Spaceman" } }
 
-};
-        Dictionary<string, string> duongDanAnhPhim = new Dictionary<string, string>()
-{
-    { "Mười", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\PhimMuoi.jpg" },
-    { "Insidious", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Insidious.jpg" },
-    { "Ngôi Nhà Trong Hẻm", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\ngôi nhà trong hẻm.jpg" },
-    { "Vong Nhi", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\vong-nhi-poster.jpg" },
-    { "Thương Mến", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Thương Mến.png" },
-    { "La La Land", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\La La Land.jpg" },
-    { "Trước Ngày Em Đến", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Trước Ngày Em Đến.png" },
-    { "Titanic", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Titanic.jpg" },
-    { "The Lion King - Vua Sư Tử", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\The Lion King - Vua Sư Tử.jpg" },
-    { "Zootopia - Phi Vụ Động Trời", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Zootopia - Phi Vụ Động Trời.png" },
-    { "Big Hero 6 - Biệt Đội Big Hero 6", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Big Hero 6 - Biệt Đội Big Hero 6.jpg" },
-    { "Rumble - Quái Thú So Chiêu", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Rumble - Quái Thú So Chiêu.jpg" },
-    { "Lật Mặt 6: Tấm Vé Định Mệnh", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Lật Mặt 6_Tấm Vé Định Mệnh.jpg" },
-    { "Con Nhót Mót Chồng", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\con-nhot-mot-chong.jpg" },
-    { "Siêu Lừa Gặp Siêu Lầy", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Siêu Lừa Gặp Siêu Lầy.jpg" },
-    { "Biệt Đội Rất Ổn", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Biệt Đội Rất Ổn.jpg" },
-    { "Godzilla x Kong: Đế chế mới", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Godzilla x Kong_ Đế chế mới.jpg" },
-    { "The Beekeeper - Mật vụ ong", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\The Beekeeper - Mật vụ ong.jpg" },
-    { "The Roundup Punishment - Vây hãm: Kẻ trừng phạt", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\The Roundup Punishment - Vây hãm_ Kẻ trừng phạt.jpg" },
-    { "Hành Tinh Khỉ: Vương Quốc Mới", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Hành Tinh Khỉ_ Vương Quốc Mới.jpg" },
-    { "The Hunger Games", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\The Hunger Games.jpg" },
-    { "Guardians of the Galaxy Vol. 3", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Guardians of the Galaxy Vol. 3.jpg" },
-    { "Transformers: Rise of the Beasts", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Transformers_ Rise of the Beasts.jpg" },
-    { "Spaceman", @"D:\DoAnTinHoc\DoAnTinHoc\HinhAnhPhim\Spaceman.jpg" },
-
-        };
+      
 
         Dictionary<string, (string gioChieu, string rapChieu)> danhSachThongTinPhim = new Dictionary<string, (string, string)>();
 
@@ -84,58 +54,13 @@ namespace DoAnTinHoc
         {
 
             InitializeComponent();
-            cmbTheLoaiPhim.Items.AddRange(danhSachPhim.Keys.ToArray());
-    
-            lstDanhSachPhim.Items.AddRange(duongDanAnhPhim.Keys.ToArray());
-            
-            cmbTheLoaiPhim.SelectedIndexChanged += cmbTheLoaiPhim_SelectedIndexChanged;
-
-
-
-
-
-
-            cmbTheLoaiPhim.Items.Add("Kinh dị");
-            cmbTheLoaiPhim.Items.Add("Tình yêu");
-            cmbTheLoaiPhim.Items.Add("Hoạt hình");
-            cmbTheLoaiPhim.Items.Add("Hài");
-            cmbTheLoaiPhim.Items.Add("Hành động");
-            cmbTheLoaiPhim.Items.Add("Khoa học viễn tưởng");
-
-
-
 
         }
        
 
         private void lstDanhSachPhim_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (lstDanhSachPhim.SelectedItem != null)
-            {
-                string tenPhim = lstDanhSachPhim.SelectedItem.ToString();
-
-             
-                if (duongDanAnhPhim.ContainsKey(tenPhim))
-                {
-                    string duongDanHinhAnh = duongDanAnhPhim[tenPhim];
-
-                    try
-                    {
-                       
-                        picPhim.Image = Image.FromFile(duongDanHinhAnh);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Không thể tải hình ảnh: " + ex.Message);
-                    }
-                }
-                else
-                {
-                    picPhim.Image = null; 
-                }
-               
-                lblThongTinFilm.Text = tenPhim + "\n" + "Được chiếu tại GALAXY CINEMA "+ "\n "+ DateTime.Now.Date+" "+ DateTime.Now.Month+ " " + DateTime.Now.Year;
-            }
+      
         }
 
 
@@ -147,51 +72,164 @@ namespace DoAnTinHoc
             
             frmDatghe form4 = new frmDatghe();
             form4.Show();
+            this.Hide();
         }
 
-        private void cmbTheLoaiPhim_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedGenre = cmbTheLoaiPhim.SelectedItem?.ToString();
-            if (string.IsNullOrEmpty(selectedGenre)) return;
-
-         
-            string searchTerm = txtSearch.Text.ToLower();
-            if (danhSachPhim.TryGetValue(selectedGenre, out List<string> movies))
-            {
-                var filteredMovies = movies
-                    .Where(movie => movie.ToLower().Contains(searchTerm))
-                    .ToArray();
-
-                lstDanhSachPhim.Items.Clear();
-                lstDanhSachPhim.Items.AddRange(filteredMovies);
-            }
-        }
+       
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            string searchTerm = txtSearch.Text.ToLower();
+            string searchText = txtSearch.Text.ToLower();
 
-         
-            lstDanhSachPhim.Items.Clear();
-
-            if (string.IsNullOrWhiteSpace(searchTerm))
+          
+            if (dgvThongTinPhim.DataSource is DataTable dataTable)
             {
-           
+                
+                string filterExpression = $"TenPhim LIKE '%{searchText}%'";
+                dataTable.DefaultView.RowFilter = filterExpression;
+            }
+
+        }
+
+        private void btnQuayLai_Click(object sender, EventArgs e)
+        {
+            frmHome ql = new frmHome();
+            ql.SetThongTin(m_hoten,m_sdt);
+
+            ql.Show();
+            this.Close();
+        }
+
+        private void frmDanhsachphim_Load(object sender, EventArgs e)
+        {
+
+
+            string filePath = @"D:\DoAnTinHoc\DoAnTinHoc\ThongTinPhim.txt";
+
+            try
+            {
+                
+                if (!File.Exists(filePath))
+                {
+                    MessageBox.Show("File ThongTinPhim.txt không tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                
+                string[] lines = File.ReadAllLines(filePath);
+
+              
+                dgvThongTinPhim.Rows.Clear();
+
+                
+                foreach (string line in lines)
+                {
+                    
+                    string[] parts = line.Split('|');
+
+                    
+                    if (parts.Length == 3)
+                    {
+                       
+                        DateTime ngayChieu = DateTime.Parse(parts[0].Trim());
+                        string tenPhim = parts[1].Trim();
+                        string soRap = parts[2].Trim();
+
+                       
+                        dgvThongTinPhim.Rows.Add(ngayChieu.ToString("dd/MM/yyyy"), tenPhim, soRap);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+               
+                MessageBox.Show("Có lỗi xảy ra khi đọc file: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        private void CapNhatDataGridView(List<ThongTinPhim> danhSach)
+        {
+            dgvThongTinPhim.Rows.Clear(); 
+            foreach (var phim in danhSach)
+            {
+                dgvThongTinPhim.Rows.Add(phim.NgayChieu.ToString("dd/MM/yyyy"), phim.TenPhim, phim.SoRap);
+            }
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                bool hasSuggestions = txtSearch.Tag != null && (bool)txtSearch.Tag;
+
+                if (!hasSuggestions)
+                {
+                    MessageBox.Show("Không tìm thấy phim nào phù hợp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void btnDatghe_Click_1(object sender, EventArgs e)
+        {
+            if (dgvThongTinPhim.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn một bộ phim!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-           
-            foreach (var category in danhSachPhim)
+            try
             {
+               
+                DataGridViewRow selectedRow = dgvThongTinPhim.SelectedRows[0];
+
                 
-                foreach (var movie in category.Value)
+                if (selectedRow.Cells["TenPhim"] == null || selectedRow.Cells["SoRap"] == null)
                 {
-                   
-                    if (movie.ToLower().Contains(searchTerm))
-                    {
-                        lstDanhSachPhim.Items.Add(movie);
-                    }
+                    MessageBox.Show("Dữ liệu không đầy đủ! Vui lòng kiểm tra lại bảng thông tin phim.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+
+                string ngayDat = DateTime.Now.ToString("dd/MM/yyyy"); 
+                string tenPhim = selectedRow.Cells["TenPhim"].Value.ToString();
+                string soRap = selectedRow.Cells["SoRap"].Value.ToString();
+
+               
+                string filePath = @"D:\DoAnTinHoc\DoAnTinHoc\KhachHang.txt";
+
+               
+                if (!File.Exists(filePath))
+                {
+                    MessageBox.Show("File KhachHang.txt không tồn tại! Vui lòng kiểm tra lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+             
+                List<string> lines = File.ReadAllLines(filePath).ToList();
+
+              
+                if (lines.Count > 0)
+                {
+                  
+                    lines[lines.Count - 1] += $" {ngayDat} | {tenPhim} | {soRap} |";
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy thông tin khách hàng trong file!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+            
+                File.WriteAllLines(filePath, lines);
+
+       
+                frmDatghe datGheForm = new frmDatghe();
+                datGheForm.Show();
+
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi lưu thông tin: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

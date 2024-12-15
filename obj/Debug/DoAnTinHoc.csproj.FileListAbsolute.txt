@@ -11,3 +11,7 @@ D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.exe
 D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.pdb
 D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.frmDanhsachphim.resources
 D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.frmDatghe.resources
+D:\DoAnTinHoc\DoAnTinHoc\bin\Debug\QrCodeGenerator.dll
+D:\DoAnTinHoc\DoAnTinHoc\bin\Debug\QRCoder.dll
+D:\DoAnTinHoc\DoAnTinHoc\bin\Debug\QrCodeGenerator.xml
+D:\DoAnTinHoc\DoAnTinHoc\obj\Debug\DoAnTinHoc.csproj.Up2Date
